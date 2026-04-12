@@ -1,0 +1,17 @@
+{
+  "name": "proyectodeprueba1",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:api": "npm --workspace @portfolio/api run dev",
+    "build:api": "npm --workspace @portfolio/api run build",
+    "lint:api": "npm --workspace @portfolio/api run lint",
+    "db:generate": "npm --workspace @portfolio/api run prisma:generate",
+    "db:migrate": "npm --workspace @portfolio/api run prisma:migrate",
+    "db:studio": "npm --workspace @portfolio/api run prisma:studio"
+  }
+}
