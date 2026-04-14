@@ -10,4 +10,6 @@ dist/
 .env.production.local
 coverage/
 *.log
-
+.postgres-data/
+.postgres-log/
+.postgres-password.txt
